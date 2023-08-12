@@ -7,13 +7,10 @@ import UsedHook from "./components/usedHook";
 function App() {
   return (
     <>
-      {/* <UseCallback/> */}
-
-      {/* <UseMemo/>  */}
-      {/* <Calculate /> */}
-      {/*<------sumar dos valores solo cuando useMemo lo permita*/}
-      
+      {/* <UseMemo/> */}
       {/* <UsedHook/> */}
+      {/* <Calculate /> */}
+      {/* <UseCallback/> */}
     </>
   );
 }

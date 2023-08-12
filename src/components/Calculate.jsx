@@ -3,7 +3,7 @@ import "../styles/calculateStyles.css";
 import { useCounter } from "../hooks/useCounter";
 
 const Calculate = () => {
-  //useCounter es un hook echo por nosotros ;)9
+  //useCounter es un hook echo por nosotros ;)
   const [valor1, suma] = useCounter();
   const [valor2, suma2] = useCounter();
 

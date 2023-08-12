@@ -10,7 +10,7 @@ const UsedHook = () => {
       <h1>Pokemons</h1>
     <div className="pokemon">
 
-      {error && <span>Algo salio mal :c</span>}
+      {error && <span>{error}</span>}
       {cargando ? (
         <p>cargando...</p>
       ) : (
