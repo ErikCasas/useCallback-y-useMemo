@@ -61,7 +61,8 @@ const value = useMemo(()=>{
 En este ejemplo, calculateTotalPrice es la función que realiza el cálculo del precio total. Usando useMemo, aseguramos que el cálculo se realic an, y el valor del total se memoiza entre renderizados. Esto puede ser especialmente útil cuando el cálculo es intensivo y no queremos repetirlo en cada renderizado del componente.
 
 ```javascript
-function ProductDetails(product, quantity ) {
+function ProductDetails({product, quantity}) {
+
   const calculateTotalPrice = () => {
     console.log('Calculating total price...');
     return product.price * quantity;
