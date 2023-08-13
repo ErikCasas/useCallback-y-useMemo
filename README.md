@@ -26,6 +26,7 @@ Al usar useCallback aquí, estamos asegurando que la función handleDelete sea m
 function ItemList() {
   const [items, setItems] = useState([]);
   
+  //solo se volveran a filtrar los items, cuando sean unos nuevos
   const handleDelete = useCallback((index) => {
     const newItems = items.filter((_, i) => i !== index);
     setItems(newItems);
@@ -60,12 +61,12 @@ const value = useMemo(()=>{
 En este ejemplo, calculateTotalPrice es la función que realiza el cálculo del precio total. Usando useMemo, aseguramos que el cálculo se realic an, y el valor del total se memoiza entre renderizados. Esto puede ser especialmente útil cuando el cálculo es intensivo y no queremos repetirlo en cada renderizado del componente.
 
 ```javascript
-function ProductDetails({ product, quantity }) {
+function ProductDetails(product, quantity ) {
   const calculateTotalPrice = () => {
     console.log('Calculating total price...');
     return product.price * quantity;
   };
-
+  //Solo se calculará el precio cuando cambie el producto o el precio 
   const totalPrice = useMemo(calculateTotalPrice, [product, quantity]);
 
   return (
