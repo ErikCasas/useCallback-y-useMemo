@@ -1,5 +1,6 @@
 # useCallback y useMemo
-
+ [![](https://img.shields.io/github/stars/ErikCasas/useCallback-y-useMemo.svg)](https://github.com/ErikCasas/useCallback-y-useMemo/stargazers)
+ ---  
 RECOMEDACIÓN: Antes de sumergirse en el uso de `useCallback` y `useMemo`, es aconsejable tener un entendimiento básico del hook useEffect. Esto te permitirá relacionar conceptos y facilitar la migración a estas nuevas herramientas. Siempre es útil consultar la documentación oficial de [useMemo](https://es.react.dev/reference/react/useMemo "click aquí") y  [useCallback](https://es.react.dev/reference/react/useCallback "click aquí")
 
 ---
@@ -56,7 +57,7 @@ const value = useMemo(()=>{
 
 ### ejemplo :love_letter:
 
-En este ejemplo, calculateTotalPrice es la función que realiza el cálculo del precio total. Usando useMemo, aseguramos que el cálculo se realice solo cuando product o quantity cambian, y el valor del total se memoiza entre renderizados. Esto puede ser especialmente útil cuando el cálculo es intensivo y no queremos repetirlo en cada renderizado del componente.
+En este ejemplo, calculateTotalPrice es la función que realiza el cálculo del precio total. Usando useMemo, aseguramos que el cálculo se realic an, y el valor del total se memoiza entre renderizados. Esto puede ser especialmente útil cuando el cálculo es intensivo y no queremos repetirlo en cada renderizado del componente.
 
 ```javascript
 function ProductDetails({ product, quantity }) {
@@ -77,3 +78,5 @@ function ProductDetails({ product, quantity }) {
   );
 }
 ```
+
+[def]: https://github.com/ErikCasas/useCallback-y-useMemo
