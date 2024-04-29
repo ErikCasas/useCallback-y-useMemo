@@ -46,7 +46,7 @@ function ItemList() {
 ---
 # useMemo
 
-`useMemo` es un hook que también apunta a mejorar el rendimiento de las aplicaciones React al memoizar valores calculados. Aunque comparte una sintaxis similar con useCallback, la diferencia clave radica en que useMemo memorizaen caché un **_valor_** devuelto por una función, evitando cálculos costosos que podrían repetirse innecesariamente.
+`useMemo` es un hook que también apunta a mejorar el rendimiento de las aplicaciones React al memoizar valores calculados. Aunque comparte una sintaxis similar con useCallback, la diferencia clave radica en que useMemo memoriza en caché un **_valor_** devuelto por una función, evitando cálculos costosos que podrían repetirse innecesariamente.
 
 ```javascript
 const value = useMemo(()=>{
@@ -58,7 +58,7 @@ const value = useMemo(()=>{
 
 ### ejemplo :love_letter:
 
-En este ejemplo, calculateTotalPrice es la función que realiza el cálculo del precio total. Usando useMemo, aseguramos que el cálculo se realic an, y el valor del total se memoiza entre renderizados. Esto puede ser especialmente útil cuando el cálculo es intensivo y no queremos repetirlo en cada renderizado del componente.
+En este ejemplo, calculateTotalPrice es la función que realiza el cálculo del precio total. Usando useMemo, aseguramos que el cálculo se realiza y el valor del total se memoiza entre renderizados. Esto puede ser especialmente útil cuando el cálculo es intensivo y no queremos repetirlo en cada renderizado del componente.
 
 ```javascript
 function ProductDetails({product, quantity}) {
